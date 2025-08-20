@@ -1,25 +1,58 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta chartset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <tile>Document</tile>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reset.css"
-    </head>
-    <body>
-        <h1> TECLADO DE SONS </h1>
-        <h2> melhores sertanejos </h2>
-        <section class="teclado">
-            <button class="tecla tecla-som-1"><img src="img/2b15c2e1aa9c9eb96ce80d341c79c3e3.jpg" alt="Mateus e Kauan" </button>
-            <button class="tecla tecla-som-2"><img src="img/3ebe2f8895ff2c70569a8ebdc7dd4e8e.jpg" alt="Zé Neto e Cristiano" </button>
-            <button class="tecla tecla-som-3"><img src="img/9ba7de09324d99f69743dc9455d5ad3c.jpg" alt="Fernando e Sorocaba" </button>
-            <button class="tecla tecla-som-4"><img src="img/149b214abddcb39ded8cc037068597cb.jpg" alt="Jorge e Mateus" </button>
-            <button class="tecla tecla-som-9"><img src="img/1876ee01c2615de1310e9ffa92ab0314.jpg" alt="Victor e Léo" </button>
-            <button class="tecla tecla-som-5"><img src="img/173397ab0829467c7ff9da3bdbf459ae.jpg" alt="Luan Santana" </button>
-            <button class="tecla tecla-som-6"><img src="img/b7fbd488ae083abf9f2032ee398e9adc.jpg" alt="Henrique e Juliano" </button>
-            <button class="tecla tecla-som-7"><img src="img/ba675ea441b6736b30e7a235b80533bb.jpg" alt="HUgo e Guilherme" </button>
-            <button class="tecla tecla-som-8"><img src="img/fff55e1a66a3d7724d8114544024fa11.jpg" alt="Maiara e Maraisa" </button>
-        </section>
-    </body>
+<html lang="pt-BR"> <!-- Define a linguagem da página -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificação de caracteres UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+
+    <title>AnimeQ</title> <!-- Título da aba -->
+
+    <!-- Importação da fonte Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Ícone da aba -->
+    <link rel="icon" type="image/png" href="img/4043233-anime-away-face-no-nobody-spirited_113254.png">
+
+    <!-- Reset de estilos e CSS principal -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Título principal -->
+    <h1>Aberturas de animes</h1>
+
+    <!-- Container das teclas -->
+    <section class="teclado">
+        <!-- Cada botão contém uma imagem ilustrativa -->
+        <button class="tecla tecla_som1"><img src="img/som1.avif" alt="Som 1"></button>
+        <button class="tecla tecla_som2"><img src="img/som2.jpg" alt="Som 2"></button>
+        <button class="tecla tecla_som3"><img src="img/som3.webp" alt="Som 3"></button>
+
+        <button class="tecla tecla_som4"><img src="img/som4.jpg" alt="Som 4"></button>
+        <button class="tecla tecla_som5"><img src="img/som5.jpg" alt="Som 5"></button>
+        <button class="tecla tecla_som6"><img src="img/som6.jpg" alt="Som 6"></button>
+
+        <button class="tecla tecla_som7"><img src="img/som7.jpg" alt="Som 7"></button>
+        <button class="tecla tecla_som8"><img src="img/som8.jpg" alt="Som 8"></button>
+        <button class="tecla tecla_som9"><img src="img/som9.webp" alt="Som 9"></button>
+    </section>
+
+    <!-- Áudios correspondentes aos botões -->
+    <audio src="./song/som1.mp3" id="som_tecla_som1"></audio>
+    <audio src="./song/som2.mp3" id="som_tecla_som2"></audio>
+    <audio src="./song/som3.mp3" id="som_tecla_som3"></audio>
+    <audio src="./song/som4.mp3" id="som_tecla_som4"></audio>
+    <audio src="./song/som5.mp3" id="som_tecla_som5"></audio>
+    <audio src="./song/som6.mp3" id="som_tecla_som6"></audio>
+    <audio src="./song/som7.mp3" id="som_tecla_som7"></audio>
+    <audio src="./song/som8.mp3" id="som_tecla_som8"></audio>
+    <audio src="./song/som9.mp3" id="som_tecla_som9"></audio>
+
+    <!-- Script principal -->
+    <script src="main.js"></script>
+</body>
 </html>
